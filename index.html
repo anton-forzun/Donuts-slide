@@ -1,0 +1,96 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="icon" href="./image/icon.png">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Dongle&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="https://unpkg.com/swiper@7/swiper-bundle.min.css"/>
+    <link rel="stylesheet" href="./style.css">
+    <title>Donut</title>
+</head>
+
+<body>
+  <div class="gallery swiper mySwiper">
+    <label>
+        <div class="menu_nav">
+            <a class="menu" href="#menu" >
+             <img class="logo" src="./image/icon.png" alt="open menu">menu
+            </a>
+             <a class="about-us"href="#about_us" >
+             <img class="logo2" src="./image/icon.png" alt="open menu">about
+             </a>
+           </div>
+    </label> 
+    
+    <div class="gallery_list swiper-wrapper">
+        <div class="gallery_item swiper-slide">
+            <img src="./image/1.jpg" alt="alt">
+          </div>
+          <div class="gallery_item swiper-slide">
+            <img src="./image/imagecompressor/2-min.jpg" alt="alt">
+            </div>
+          <div class="gallery_item swiper-slide">
+            <img src="./image/imagecompressor/3-min.jpg" alt="alt">
+          </div>
+          <div class="gallery_item swiper-slide">
+            <img src="./image/imagecompressor/4-min.jpg" alt="alt">
+          </div>
+          <div class="gallery_item swiper-slide">
+            <img src="./image/imagecompressor/5-min.jpg" alt="alt">
+          </div>
+          <div class="gallery_item swiper-slide">
+            <img src="./image/imagecompressor/6-min.jpg" alt="alt">
+          </div>
+          <div class="gallery_item swiper-slide">
+            <img src="./image/imagecompressor/7-min.jpg" alt="alt">
+          </div>
+          <div class="gallery_item swiper-slide">
+            <img src="./image/imagecompressor/8-min.jpg" alt="alt">
+          </div>
+          <div class="gallery_item swiper-slide">
+            <img src="./image/imagecompressor/9-min.jpg" alt="alt">
+          </div>
+          <div class="gallery_item swiper-slide">
+            <img src="./image/imagecompressor/10-min.jpg" alt="alt">
+        </div>
+        <div class="gallery_item swiper-slide">
+            <img src="./image/imagecompressor/11-min.jpg" alt="alt">
+        </div>
+        <div class="gallery_item swiper-slide">
+            <img src="./image/imagecompressor/12-min.jpg" alt="alt">
+        </div>
+      </div>
+      
+  </div>
+    <script src="./script.js"></script>
+    <script type="module">
+      import Swiper from 'https://unpkg.com/swiper@7/swiper-bundle.esm.browser.min.js'
+        var swiper = new Swiper(".mySwiper", {
+            effect: "coverflow",
+            grabCursor: true,
+            speed: 1000,
+  autoplay: {
+    delay: 0,
+  },
+        //     autoplay: {
+        //   delay: 1000,
+        //   disableOnInteraction: false,
+        // },
+            centeredSlides: true,
+            slidesPerView: "auto",
+            coverflowEffect: {
+              rotate: 20,
+              stretch: 0,
+              depth: 200,
+              modifier: 1,
+              slideShadows: false,
+            },
+            loop:true
+          });
+      </script>
+</body>
+</html>
